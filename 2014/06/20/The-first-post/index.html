@@ -23,6 +23,36 @@
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </head>
 <body>
   <div id="container">
@@ -85,7 +115,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.vichare.net/2014/06/20/The-first-post/" data-id="8zsbf1q6d5ikcmdr" class="article-share-link">Share</a>
+      <a data-url="http://github.vichare.net/2014/06/20/The-first-post/" data-id="vp6ccp3hlwyrogpj" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li></ul>
@@ -96,11 +126,15 @@
     
 <nav id="article-nav">
   
-  
-    <a href="/2014/06/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2014/06/20/Get-it-done/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Get it done
+        
+      </div>
     </a>
+  
   
 </nav>
 
@@ -135,7 +169,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06">六月 2014</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06">六月 2014</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -147,11 +181,15 @@
       <ul>
         
           <li>
-            <a href="/2014/06/20/The-first-post/">The first post</a>
+            <a href="/2014/06/20/Test-CN/">测试中文</a>
           </li>
         
           <li>
-            <a href="/2014/06/20/hello-world/">Hello World</a>
+            <a href="/2014/06/20/Get-it-done/">Get it done</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/20/The-first-post/">The first post</a>
           </li>
         
       </ul>
