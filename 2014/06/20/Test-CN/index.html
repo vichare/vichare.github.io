@@ -110,7 +110,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Test<br>测试一下<br>如果想发布中文，必须用utf-8编码。<br><a id="more"></a><br>$x &gt; 0$<br>$$ \left(r,r\right) $$<br>$$ &lt; r,r &gt; $$<br>When $a \ne 0$, there are two solutions to (ax^2 + bx + c = 0) and they are<br>$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
+        <p>Test<br>测试一下<br>如果想发布中文，必须用utf-8编码。<br><a id="more"></a></p>
+<span>$$   \def\ud{\mathrm{d}}
+   \def\RR{\bf R}
+   \def\bold#1{\bf #1}$$</span>
+
+<p>$x &gt; 0$<br>$$ \left(r,r\right) $$<br>$$ &lt; r,r &gt; $$<br>When $a \ne 0$, there are two solutions to (ax^2 + bx + c = 0) and they are<br>$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</p>
 <span>$$\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
 \mathbf{i} & \mathbf{j} & \mathbf{k} \\
 \frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
@@ -121,20 +126,39 @@
 \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})},
 \quad\quad \text{for $|q|1$}.$$</span>
 
-<span>$$f(x) = {\frac{1}{\sigma \sqrt{2\pi}} } e^{- \frac{(x-\mu )^2 }{ 2\sigma^2}}$$</span>
+<span>$$f(x) = {\frac{1}{\sigma \sqrt{2\pi}} } e^{- \frac{(x-\mu )^2 }{ 2\sigma^2}} \\\\
+\Phi(x) = \int_{-\infty}^{x} {\frac{1}{\sigma \sqrt{2\pi}} } e^{- \frac{(t-\mu )^2 }{ 2\sigma^2}} \ud t$$</span>
 
-<p>Flory<br>$$ &lt; \lt &amp;lt r,r &gt; ^{\frac{1}{2}} = \left(\frac{1}{2}\right)^{\frac{1}{5}}aN^{\frac{3}{5}}$$</p>
+<p>Flory<br>$$ &lt; r,r &gt; ^{\frac{1}{2}} = \left(\frac{1}{2}\right)^{\frac{1}{5}}aN^{\frac{3}{5}}$$</p>
+<p>对于尖括号，必须在两端加空格，或者用’\lt’或’&lt;’代替：<br>$$ &lt; \lt &lt; &gt; \gt &gt; $$</p>
 <p>带下标的公式必须用block <span>$P(X_t| Y_{1:t-1})$</span></p>
+<span>$$\begin{equation}
+f(x) = {\frac{1}{\sigma \sqrt{2\pi}} } e^{- \frac{(x-\mu )^2 }{ 2\sigma^2}}
+\end{equation}$$</span>
+
+<p>MathJax 官方文档说明：<br><a href="http://docs.mathjax.org/en/latest/tex.html" target="_blank" rel="external">http://docs.mathjax.org/en/latest/tex.html</a></p>
 <p>Code Test</p>
-<figure class="highlight language"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>code snippet
+<figure class="highlight c"><figcaption><span>HelloWorld.c </span><a href="http://vichare.net/" target="_blank" rel="external">My_blog</a></figcaption><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre><span class="preprocessor">#include &lt;iostream&gt;</span>
+
+<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
+
+<span class="keyword">int</span> main() {
+    <span class="keyword">return</span> <span class="number">0</span>;
+}
 </pre></td></tr></table></figure>
 
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.vichare.net/2014/06/20/Test-CN/" data-id="hsrbrlzrsn615jjh" class="article-share-link">Share</a>
+      <a data-url="http://github.vichare.net/2014/06/20/Test-CN/" data-id="z2ege1ukusvte6oz" class="article-share-link">Share</a>
       
       
     </footer>
