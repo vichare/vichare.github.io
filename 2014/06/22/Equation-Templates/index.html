@@ -116,16 +116,26 @@
     \left\{
         \begin{array}{ll}
             \min \{b_t + \alpha_{\mathrm{i}} (h_t-c_t), B_\mathrm{max} \} \quad & h_t > c_t \\
-            b_t - \alpha_\mathrm{o}^{-1} \quad & \mathrm{otherwise.}
+            b_t - \alpha_\mathrm{o}^{-1}(c_t-h_t) \quad & \mathrm{otherwise.}
         \end{array}
     \right.
     \label{eqn:battery_transition_ineff}
 \end{eqnarray}$$</span>
 
+<span>$$\begin{equation}
+\begin{aligned}
+& \underset{x}{\min}
+& & f_0(x) \\
+& \text{s.t.}
+& & f_i(x) \leq b_i, \; i = 1, \ldots, m.
+\end{aligned}
+\end{equation}$$</span>
+
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.vichare.net/2014/06/22/Equation-Templates/" data-id="ov3zttxpz9zf830a" class="article-share-link">Share</a>
+      <a data-url="http://github.vichare.net/2014/06/22/Equation-Templates/" data-id="66htuaeo599543v8" class="article-share-link">Share</a>
       
       
     </footer>
