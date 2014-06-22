@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://github.vichare.net//"/>
-  <updated>2014-06-22T15:37:42.588Z</updated>
+  <updated>2014-06-22T15:42:08.208Z</updated>
   <id>http://github.vichare.net//</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://github.vichare.net/2014/06/22/Equation-Templates/"/>
     <id>http://github.vichare.net/2014/06/22/Equation-Templates/</id>
     <published>2014-06-22T14:58:53.000Z</published>
-    <updated>2014-06-22T15:33:20.000Z</updated>
+    <updated>2014-06-22T15:42:05.000Z</updated>
     <content type="html"><![CDATA[<p>虽然觉得hexo蛮好玩的，但是目前还没有足够的动力用hexo作为blog。这里就作为一个临时记点东西的地方吧，估计以后很少会在这里写东西。<br><a id="more"></a></p>
 <span>$$\begin{eqnarray}
     b_{t+1} = 
@@ -32,13 +32,15 @@
     \label{eqn:battery_transition_ineff}
 \end{eqnarray}$$</span>
 
-<span>$$\begin{equation}
-\begin{aligned}
-& \underset{x}{\min}
-& & f_0(x) \\
-& \text{s.t.}
-& & f_i(x) \leq b_i, \; i = 1, \ldots, m.
-\end{aligned}
+<span>$$    \begin{equation}
+    \begin{aligned}
+        \underset{x}{\min}
+        & & & U(x) \\
+        \text{s.t.}
+        & & & f_i(x) \leq b_i, \; i = 1, \ldots, m. \\
+        & & & x > 0
+    \end{aligned}
+    \label{eqn:}
 \end{equation}$$</span>
 
 ]]></content>
