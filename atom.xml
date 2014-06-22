@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://github.vichare.net//"/>
-  <updated>2014-06-20T17:05:10.608Z</updated>
+  <updated>2014-06-22T15:01:48.825Z</updated>
   <id>http://github.vichare.net//</id>
   
   <author>
@@ -13,6 +13,28 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Equation Templates]]></title>
+    <link href="http://github.vichare.net/2014/06/22/Equation-Templates/"/>
+    <id>http://github.vichare.net/2014/06/22/Equation-Templates/</id>
+    <published>2014-06-22T14:58:53.000Z</published>
+    <updated>2014-06-22T15:01:36.000Z</updated>
+    <content type="html"><![CDATA[<p>虽然觉得hexo蛮好玩的，但是目前还没有足够的动力用hexo作为blog。这里就作为一个临时记点东西的地方吧，估计以后很少会在这里写东西。<br><a id="more"></a></p>
+<span>$$\begin{eqnarray}
+    b_{t+1} = 
+    \left\{
+        \begin{array}{ll}
+            \min \{b_t + \alpha_{\mathrm{i}} (h_t-c_t), B_\mathrm{max} \} \quad & h_t > c_t \\
+            b_t - \alpha_\mathrm{o}^{-1} \quad & \mathrm{otherwise.}
+        \end{array}
+    \right.
+    \label{eqn:battery_transition_ineff}
+\end{eqnarray}$$</span>
+]]></content>
+    <summary type="html"><![CDATA[<p>虽然觉得hexo蛮好玩的，但是目前还没有足够的动力用hexo作为blog。这里就作为一个临时记点东西的地方吧，估计以后很少会在这里写东西。<br>]]></summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[测试中文]]></title>
@@ -74,7 +96,7 @@ f(x) = {\frac{1}{\sigma \sqrt{2\pi}} } e^{- \frac{(x-\mu )^2 }{ 2\sigma^2}}
     <link href="http://github.vichare.net/2014/06/20/Get-it-done/"/>
     <id>http://github.vichare.net/2014/06/20/Get-it-done/</id>
     <published>2014-06-20T08:59:01.000Z</published>
-    <updated>2014-06-20T12:18:44.000Z</updated>
+    <updated>2014-06-22T15:01:40.000Z</updated>
     <content type="html"><![CDATA[<p>I tried hexo on Github Pages for fun,<br>but don’t know why I should use it.<br>I may not post on this site much.<br>Test equations:<br>For any $x &gt; 0$, <span>$y> 0$</span>,<br>$$G(x) = \int_0^x e^{-\frac{x^2}{2}} \mathrm{d}x.$$</p>
 <p>Other examples:</p>
 <span>$$\begin{aligned}
