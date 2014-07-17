@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://github.vichare.net//"/>
-  <updated>2014-07-17T14:02:09.673Z</updated>
+  <updated>2014-07-17T14:14:37.382Z</updated>
   <id>http://github.vichare.net//</id>
   
   <author>
@@ -19,9 +19,9 @@
     <link href="http://github.vichare.net/2014/07/17/Random-Walk/"/>
     <id>http://github.vichare.net/2014/07/17/Random-Walk/</id>
     <published>2014-07-17T07:56:02.000Z</published>
-    <updated>2014-07-17T14:01:35.000Z</updated>
-    <content type="html"><![CDATA[<p>题目：<br>假设$x_t, t=0, 1,2,\cdots$为一个以0为反射壁的一维随机游走：</p>
-<p>First, <span>$x_0 = 0$</span>, For $t \ge 0$, <span>$x_{t+1} = x_t + 1$</span> with probablity 0.5, and <span>$x_{t+1} = \max\{x_{t+1}-1, 0\}$</span> with probability 0.5.</p>
+    <updated>2014-07-17T14:14:31.000Z</updated>
+    <content type="html"><![CDATA[<p>假设$x_t, t=0, 1,2,\cdots$为一个以0为反射壁的一维随机游走：</p>
+<p>First, <span>$x_0 = 0$</span>, For $t \ge 0$, <span>$x_{t+1} = x_t + 1$</span> with probablity 0.5, and <span>$x_{t+1} = \max\{x_{t}-1, 0\}$</span> with probability 0.5.</p>
 <p>Let <span>$e_t$</span> denote the expectation of <span>$x_t$</span>:</p>
 <span>$$e_t = E \left\{ x_t \right\}, t=1,2,3,\cdots$$</span>
 
