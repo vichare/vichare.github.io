@@ -90,6 +90,53 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Random-Walk" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/07/17/Random-Walk/" class="article-date">
+  <time datetime="2014-07-17T07:56:02.000Z" itemprop="datePublished">7月 17 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/07/17/Random-Walk/">Random Walk</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>题目：<br>假设$x_t, t=0, 1,2,\cdots$为一个以0为反射壁的一维随机游走：</p>
+<p>First, <span>$x_0 = 0$</span>, For $t \ge 0$, <span>$x_{t+1} = x_t + 1$</span> with probablity 0.5, and <span>$x_{t+1} = \max\{x_{t+1}-1, 0\}$</span> with probability 0.5.</p>
+<p>Let <span>$e_t$</span> denote the expectation of <span>$x_t$</span>:</p>
+<span>$$e_t = E \left\{ x_t \right\}, t=1,2,3,\cdots$$</span>
+
+<p>显然，$e_t$单调非减。如果$e_t$收敛，令：</p>
+<p><span>$$e_{\infty} = \lim_{t \to +\infty} e_t$$</span><br>那么，一定存在$N$，使得 $\forall n \ge N$,</p>
+<p><span>$$e_{\infty} - 0.25 < e_n \le e_{\infty}$$</span><br>令$P(N,M)$表示从第$N$步到第$N+M-1$步，$x_t$至少回到原点一次的概率。<br>根据一维随机游走的常返性：</p>
+<p><span>$$\lim_{M \to +\infty} P(N,M) = 1$$</span><br>显然，$P(N,M)$关于M单调非减。所以对于$N$，存在$M$，使得</p>
+<p><span>$$P(N,M) > 0.5$$</span><br>易知：</p>
+<p><span>$$e_{N+M} > e_N + 0.5 * P(N,M) > e_{\infty}$$</span><br>与假设矛盾。$\blacksquare$</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://github.vichare.net/2014/07/17/Random-Walk/" data-id="9zxn9qhvwplqhnp0" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Equation-Templates" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2014/06/22/Equation-Templates/" class="article-date">
@@ -112,7 +159,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>虽然觉得hexo蛮好玩的，但是目前还没有足够的动力用hexo作为blog。这里就作为一个临时记点东西的地方吧，估计以后很少会在这里写东西。<br>
+        <p>虽然觉得hexo蛮好玩的，但是目前还没有足够的动力用hexo作为blog。这里就作为一个临时记点东西的地方吧，估计以后很少会在这里写东西。</p>
+<p>hexo有个缺点是，每次修改一点都把所有文件重新generate一遍，然后要commit一堆上去…<br>
         
           <p class="article-more-link">
             <a href="/2014/06/22/Equation-Templates/#more">Read More</a>
@@ -121,7 +169,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.vichare.net/2014/06/22/Equation-Templates/" data-id="uyh8vjm1i71j4tpr" class="article-share-link">Share</a>
+      <a data-url="http://github.vichare.net/2014/06/22/Equation-Templates/" data-id="py2ckmgxjuvzsj07" class="article-share-link">Share</a>
       
       
     </footer>
@@ -162,7 +210,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.vichare.net/2014/06/20/Test-CN/" data-id="dfc57t0cdtgw4ei2" class="article-share-link">Share</a>
+      <a data-url="http://github.vichare.net/2014/06/20/Test-CN/" data-id="tkxzr2phehdx2iwa" class="article-share-link">Share</a>
       
       
     </footer>
@@ -207,7 +255,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.vichare.net/2014/06/20/Get-it-done/" data-id="2f6mx2eorao27qx4" class="article-share-link">Share</a>
+      <a data-url="http://github.vichare.net/2014/06/20/Get-it-done/" data-id="pinxw2e4w3jfpg5j" class="article-share-link">Share</a>
       
       
     </footer>
@@ -244,7 +292,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.vichare.net/2014/06/20/The-first-post/" data-id="cdxvk8gn7bf05700" class="article-share-link">Share</a>
+      <a data-url="http://github.vichare.net/2014/06/20/The-first-post/" data-id="wk2msrhnbv86dic7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li></ul>
@@ -285,7 +333,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06">六月 2014</a><span class="archive-list-count">4</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07">七月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06">六月 2014</a><span class="archive-list-count">4</span></li></ul>
     </div>
   </div>
 
@@ -295,6 +343,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2014/07/17/Random-Walk/">Random Walk</a>
+          </li>
         
           <li>
             <a href="/2014/06/22/Equation-Templates/">Equation Templates</a>

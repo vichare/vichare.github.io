@@ -3,17 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2014/6 | Vichare&#39;s blog</title>
+  <title>Random Walk | Vichare&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="A place to record something.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Vichare's blog">
-<meta property="og:url" content="http://github.vichare.net//archives/2014/06/">
+  <meta name="description" content="题目：假设$x_t, t=0, 1,2,\cdots$为一个以0为反射壁的一维随机游走：
+First, $x_0 = 0$, For $t \ge 0$, $x_{t+1} = x_t + 1$ with probablity 0.5, and $x_{t+1} = \max\{x_{t+1}-1, 0\}$ with probability 0.5.
+Let $e_t$ denote the e">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Random Walk">
+<meta property="og:url" content="http://github.vichare.net//2014/07/17/Random-Walk/">
 <meta property="og:site_name" content="Vichare's blog">
-<meta property="og:description" content="A place to record something.">
+<meta property="og:description" content="题目：假设$x_t, t=0, 1,2,\cdots$为一个以0为反射壁的一维随机游走：
+First, $x_0 = 0$, For $t \ge 0$, $x_{t+1} = x_t + 1$ with probablity 0.5, and $x_{t+1} = \max\{x_{t+1}-1, 0\}$ with probability 0.5.
+Let $e_t$ denote the e">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vichare's blog">
-<meta name="twitter:description" content="A place to record something.">
+<meta name="twitter:title" content="Random Walk">
+<meta name="twitter:description" content="题目：假设$x_t, t=0, 1,2,\cdots$为一个以0为反射壁的一维随机游走：
+First, $x_0 = 0$, For $t \ge 0$, $x_{t+1} = x_t + 1$ with probablity 0.5, and $x_{t+1} = \max\{x_{t+1}-1, 0\}$ with probability 0.5.
+Let $e_t$ denote the e">
   
     <link rel="alternative" href="/atom.xml" title="Vichare&#39;s blog" type="application/atom+xml">
   
@@ -88,12 +94,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Equation-Templates" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Random-Walk" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/06/22/Equation-Templates/" class="article-date">
-  <time datetime="2014-06-22T14:58:53.000Z" itemprop="datePublished">6月 22 2014</time>
+    <a href="/2014/07/17/Random-Walk/" class="article-date">
+  <time datetime="2014-07-17T07:56:02.000Z" itemprop="datePublished">7月 17 2014</time>
 </a>
     
   </div>
@@ -103,8 +107,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/06/22/Equation-Templates/">Equation Templates</a>
+    <h1 class="article-title" itemprop="name">
+      Random Walk
     </h1>
   
 
@@ -112,152 +116,41 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>虽然觉得hexo蛮好玩的，但是目前还没有足够的动力用hexo作为blog。这里就作为一个临时记点东西的地方吧，估计以后很少会在这里写东西。</p>
-<p>hexo有个缺点是，每次修改一点都把所有文件重新generate一遍，然后要commit一堆上去…<br>
-        
-          <p class="article-more-link">
-            <a href="/2014/06/22/Equation-Templates/#more">Read More</a>
-          </p>
-        
+        <p>题目：<br>假设$x_t, t=0, 1,2,\cdots$为一个以0为反射壁的一维随机游走：</p>
+<p>First, <span>$x_0 = 0$</span>, For $t \ge 0$, <span>$x_{t+1} = x_t + 1$</span> with probablity 0.5, and <span>$x_{t+1} = \max\{x_{t+1}-1, 0\}$</span> with probability 0.5.</p>
+<p>Let <span>$e_t$</span> denote the expectation of <span>$x_t$</span>:</p>
+<span>$$e_t = E \left\{ x_t \right\}, t=1,2,3,\cdots$$</span>
+
+<p>显然，$e_t$单调非减。如果$e_t$收敛，令：</p>
+<p><span>$$e_{\infty} = \lim_{t \to +\infty} e_t$$</span><br>那么，一定存在$N$，使得 $\forall n \ge N$,</p>
+<p><span>$$e_{\infty} - 0.25 < e_n \le e_{\infty}$$</span><br>令$P(N,M)$表示从第$N$步到第$N+M-1$步，$x_t$至少回到原点一次的概率。<br>根据一维随机游走的常返性：</p>
+<p><span>$$\lim_{M \to +\infty} P(N,M) = 1$$</span><br>显然，$P(N,M)$关于M单调非减。所以对于$N$，存在$M$，使得</p>
+<p><span>$$P(N,M) > 0.5$$</span><br>易知：</p>
+<p><span>$$e_{N+M} > e_N + 0.5 * P(N,M) > e_{\infty}$$</span><br>与假设矛盾。$\blacksquare$</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.vichare.net/2014/06/22/Equation-Templates/" data-id="py2ckmgxjuvzsj07" class="article-share-link">Share</a>
+      <a data-url="http://github.vichare.net/2014/07/17/Random-Walk/" data-id="9zxn9qhvwplqhnp0" class="article-share-link">Share</a>
       
       
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Test-CN" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/06/20/Test-CN/" class="article-date">
-  <time datetime="2014-06-20T11:45:27.000Z" itemprop="datePublished">6月 20 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/06/20/Test-CN/">测试中文</a>
-    </h1>
+    <a href="/2014/06/22/Equation-Templates/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Equation Templates</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Test<br>测试一下<br>如果想发布中文，必须用utf-8编码。<br>
-        
-          <p class="article-more-link">
-            <a href="/2014/06/20/Test-CN/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://github.vichare.net/2014/06/20/Test-CN/" data-id="tkxzr2phehdx2iwa" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
 
-
-  
-    <article id="post-Get-it-done" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/06/20/Get-it-done/" class="article-date">
-  <time datetime="2014-06-20T08:59:01.000Z" itemprop="datePublished">6月 20 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/06/20/Get-it-done/">Get it done</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>I tried hexo on Github Pages for fun,<br>but don’t know why I should use it.<br>I may not post on this site much.<br>Test equations:<br>For any $x &gt; 0$, <span>$y> 0$</span>,<br>$$G(x) = \int_0^x e^{-\frac{x^2}{2}} \mathrm{d}x.$$</p>
-<p>Other examples:</p>
-<span>$$\begin{aligned}
-\dot{x} & = \sigma(y-x) \\
-\dot{y} & = \rho x - y - xz \\
-\dot{z} & = -\beta z + xy
-\end{aligned}$$</span>
-
-<p>The local website updates right after saving the md file, that’s nice.<br>After installing hexo-livereload plugin, the browser will automatically refresh as well!</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://github.vichare.net/2014/06/20/Get-it-done/" data-id="pinxw2e4w3jfpg5j" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-The-first-post" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/06/20/The-first-post/" class="article-date">
-  <time datetime="2014-06-20T07:19:10.000Z" itemprop="datePublished">6月 20 2014</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/06/20/The-first-post/">The first post</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Hello World!</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://github.vichare.net/2014/06/20/The-first-post/" data-id="wk2msrhnbv86dic7" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
 </section>
         
           <aside id="sidebar">
